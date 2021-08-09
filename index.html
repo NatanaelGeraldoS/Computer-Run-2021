@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMRUN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="profile container">
+        <h1 class="title">Profile</h1>
+        <div class="row mt-5">
+            <div class="col-6 mt-5">
+                <h4 class="welcometext">Welcome,</h4>
+                <h1 class="name">edward kencana</h1>
+                <h4 class="University">Binus University</h4>
+                <h4 class="NIM">NIM: 2441234567</h4>
+                <a href="" class="logoutbutton">Log Out</a>
+                <br>
+                <img src="assets/lefttopassets.png" alt="" class="lefttopassets">
+            </div>
+            <div class="col-6 mt-5">
+                <img src="assets/C Logo 2021 4.png" alt="" class="logoimage position-absolute">
+                <img src="assets/orang lari 1.png" alt="" class="runimage mt-5" style="margin-top: 10%;">
+                <br>
+                <img src="assets/rightbottomassets.png" alt="" class="righttopassets">
+            </div>
+        </div>
+    </div>
+    <div class="ticket container">
+        <h1 class="titleticket">Your Ticket</h1>
+        <table class="table">
+            <thead class="headtable">
+                <tr>
+                    <th scope="col">Req.ID</th>
+                    <th scope="col">Event</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody class="bodytable">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Opening</td>
+                    <td>Checked-out</td>
+                    <td><button type="button" class="btn btn-custom-disable disable">
+                            Checked Out
+                        </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Opening</td>
+                    <td>Checked-in</td>
+                    <td><button type="button" class="btn btn-custom-active" data-toggle="modal"
+                            data-target="#exampleModal1">
+                            Check Out
+                        </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Opening</td>
+                    <td>Checked-in</td>
+                    <td><button type="button" class="btn btn-custom-disable">
+                            Checked In
+                        </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Opening</td>
+                    <td>Started</td>
+                    <td><button type="button" class="btn btn-custom-active" data-toggle="modal"
+                            data-target="#exampleModal">
+                            Check In
+                        </button></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Opening</td>
+                    <td>Pending</td>
+                    <td> </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Button Register -->
+        <div class="d-flex p-5">
+            <a href="" class="registermorebutton">Register More Event</a>
+        </div>
+
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true" class="w-100">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Opening</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="color: white;">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6"><img src="assets/Poster.png" alt="" class="w-100"></div>
+                                <div class="col-md-6">
+                                    <h3 class="title mt-md-0 mt-5">Opening</h3>
+                                    <p class="mt-5">Hari, Tanggal : 9 August 2021</p>
+                                    <p>Jam : 15.42</p>
+                                    <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate</p>
+                                </div>
+                            </div>
+                            <h3 class="titlesecond mt-5">Personal Details</h3>
+                            <div class="row ">
+                                <div class="col-md-6">
+
+                                    <p>Name : Edward Kencana</p>
+                                    <p>Telephone : 081235412312</p>
+                                    <p>Line ID : asdana</p>
+                                    <p>Mailing Address : blabla@binus.ac.id</p>
+                                </div>
+                                <div class="col-md-6"><img src="assets/Ticket.png" alt="" class="w-100 my-auto"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <button type="button" class="btn btn-custom-active mx-auto" data-toggle="modal"
+                                data-target="#exampleModal">
+                                Check In
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Check Out -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1Label"
+            aria-hidden="true" class="w-100">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Opening</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6"><img src="assets/Poster.png" alt="" class="w-100"></div>
+                                <div class="col-md-6">
+                                    <h3 class="title mt-md-0 mt-5">Opening</h3>
+                                    <p class="mt-5">Hari, Tanggal : 9 August 2021</p>
+                                    <p>Jam : 15.42</p>
+                                    <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate</p>
+                                </div>
+                            </div>
+                            <h3 class="titlesecond mt-5">Personal Details</h3>
+                            <div class="row ">
+                                <div class="col-md-6">
+
+                                    <p>Name : Edward Kencana</p>
+                                    <p>Telephone : 081235412312</p>
+                                    <p>Line ID : asdana</p>
+                                    <p>Mailing Address : blabla@binus.ac.id</p>
+                                </div>
+                                <div class="col-md-6"><img src="assets/Ticket.png" alt="" class="w-100 my-auto"></div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <button type="button" class="btn btn-custom-active mx-auto" data-toggle="modal"
+                                data-target="#exampleModal1">
+                                Check Out
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
