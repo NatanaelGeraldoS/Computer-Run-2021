@@ -136,6 +136,7 @@ body {
   padding-right: 4%;
   transition: 1s;
   text-decoration: none;
+  text-align: center;
 }
 .registermorebutton:hover {
   border-width: 3px;
