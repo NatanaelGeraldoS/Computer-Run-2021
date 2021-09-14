@@ -1,3 +1,15 @@
+@font-face {
+  font-family: airstrike;
+  src: url("../COMRUN/FONT/airstrike/airstrike-webfont.woff2") format("woff2"),
+    url("../COMRUN/FONT/airstrike/airstrike-webfont.woff") format("woff"),
+    url("../FONT/airstrike/airstrike.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: bahnschrift;
+  src: url(../FONT/Bahnschrift/BAHNSCHRIFT.TTF);
+}
 * {
   font-family: airstrike;
 }
